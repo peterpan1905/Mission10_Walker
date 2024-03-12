@@ -4,8 +4,8 @@ import Header from './Header';
 
 function App() {
   return (
-    <div>
-      <Header />
+    <div className="App">
+      <Header title="Bowling League Data" />
     </div>
   );
 }
