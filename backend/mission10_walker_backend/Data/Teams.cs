@@ -6,6 +6,6 @@ namespace mission10_walker_backend.Data
     {
         [Key]
         public int TeamID { get; set; }
-        public string? TeamName { get; set; }
+        public string TeamName { get; set; }
     }
 }

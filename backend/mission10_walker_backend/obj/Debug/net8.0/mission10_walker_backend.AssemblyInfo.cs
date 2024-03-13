@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("mission10_walker_backend")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ac607c22841a5a4658b22a1fed1c62618508c3f4")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+99ad61e4d1c0963990f3aff11e833ab88de3d5fd")]
 [assembly: System.Reflection.AssemblyProductAttribute("mission10_walker_backend")]
 [assembly: System.Reflection.AssemblyTitleAttribute("mission10_walker_backend")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

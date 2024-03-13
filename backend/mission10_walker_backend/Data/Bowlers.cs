@@ -13,7 +13,7 @@ namespace mission10_walker_backend.Data
         public string? BowlerLastName { get; set;}
         [ForeignKey("Teams")]
         public int TeamID { get; set; }
-        public Teams? Teams { get; set; }
+        public Teams Teams { get; set; }
         public string? BowlerAddress { get; set;}
         public string? BowlerCity { get; set;}
         public string? BowlerState { get; set;}
