@@ -1,0 +1,6 @@
+@mission10_walker_backend_HostAddress = http://localhost:5084
+
+GET {{mission10_walker_backend_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
