@@ -1,6 +1,9 @@
+import { useState } from 'react';
 import { Bowler } from '../types/Bowler';
 
 function BowlerTable() {
+  const [bowlerData, setBowlerData] = useState<Bowler[]>([]);
+
   return (
     <>
       <div className="row">
@@ -19,9 +22,19 @@ function BowlerTable() {
           </tr>
         </thead>
         <tbody>
-          <tr>
-            <td></td>
-          </tr>
+          {bowlerData.map((b) => (
+            <tr key={b.bowlerID}>
+              <td>
+                {b.bowlerFirstName} {b.bowlerMiddleInit} {b.bowlerLastName}
+              </td>
+              <td>{b.teamName}</td>
+              <td>{b.bowlerAddress}</td>
+              <td>{b.bowlerCity}</td>
+              <td>{b.bowlerState}</td>
+              <td>{b.bowlerZip}</td>
+              <td>{b.bowlerPhoneNumber}</td>
+            </tr>
+          ))}
         </tbody>
       </table>
     </>
