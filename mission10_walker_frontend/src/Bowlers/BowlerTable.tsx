@@ -1,4 +1,6 @@
-function BowlerList() {
+import { Bowler } from '../types/Bowler';
+
+function BowlerTable() {
   return (
     <>
       <div className="row">
@@ -16,10 +18,14 @@ function BowlerList() {
             <th>Phone Number</th>
           </tr>
         </thead>
-        <tbody></tbody>
+        <tbody>
+          <tr>
+            <td></td>
+          </tr>
+        </tbody>
       </table>
     </>
   );
 }
 
-export default BowlerList;
+export default BowlerTable;

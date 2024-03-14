@@ -8,7 +8,7 @@ namespace mission10_walker_backend.Data
         { 
         }
 
-        public DbSet<Bowlers> Bowlers { get; set; }
-        public DbSet<Teams> Teams { get; set; }
+        public DbSet<Bowler> Bowlers { get; set; }
+        public DbSet<Team> Teams { get; set; }
     }
 }

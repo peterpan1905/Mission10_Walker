@@ -1,13 +1,13 @@
 import React from 'react';
 import './App.css';
 import Header from './Header';
-import BowlerList from './Bowlers/BowlerList';
+import BowlerTable from './Bowlers/BowlerTable';
 
 function App() {
   return (
     <div className="App">
       <Header title="Bowling League Data" />
-      <BowlerList />
+      <BowlerTable />
     </div>
   );
 }

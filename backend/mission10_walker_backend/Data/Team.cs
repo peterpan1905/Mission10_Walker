@@ -2,7 +2,7 @@
 
 namespace mission10_walker_backend.Data
 {
-    public class Teams
+    public class Team
     {
         [Key]
         public int TeamID { get; set; }

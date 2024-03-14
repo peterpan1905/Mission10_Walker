@@ -2,6 +2,6 @@
 {
     public interface IBowlerRepository
     {
-        IEnumerable<Bowlers> GetBowlersWithTeam();
+        IEnumerable<Bowler> GetBowlersWithTeam();
     }
 }

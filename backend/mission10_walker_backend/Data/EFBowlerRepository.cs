@@ -10,7 +10,7 @@ namespace mission10_walker_backend.Data
             _context = temp;
         }
 
-        public IEnumerable<Bowlers> GetBowlersWithTeam()
+        public IEnumerable<Bowler> GetBowlersWithTeam()
         {
             return _context.Bowlers
                 .Include(b => b.Teams)

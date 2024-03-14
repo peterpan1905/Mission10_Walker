@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using mission10_walker_backend.Data;
 
 namespace mission10_walker_backend.Controllers
@@ -16,6 +17,7 @@ namespace mission10_walker_backend.Controllers
         public IEnumerable<object> Get()
         {
             var bowlerData = _bowlerRepository.GetBowlersWithTeam()
+                             .Where(b => b.Teams.TeamName == "Marlins" || b.Teams.TeamName == "Sharks")
                              .Select(b => new
                              {
                                  BowlerID = b.BowlerID,
@@ -30,9 +32,9 @@ namespace mission10_walker_backend.Controllers
                                  BowlerPhoneNumber = b.BowlerPhoneNumber
                              });
 
-            var joinedList = bowlerData.ToList();
+            var bowlerArray = bowlerData.ToArray();
 
-            return joinedList;
+            return bowlerArray;
         }
     }
 }
