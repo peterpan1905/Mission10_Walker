@@ -7,6 +7,8 @@ function App() {
   return (
     <div className="App">
       <Header title="Bowling League Data" />
+      <br />
+      <br />
       <BowlerTable />
     </div>
   );

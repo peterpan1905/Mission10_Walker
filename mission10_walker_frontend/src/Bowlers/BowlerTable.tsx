@@ -1,8 +1,17 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { Bowler } from '../types/Bowler';
 
 function BowlerTable() {
   const [bowlerData, setBowlerData] = useState<Bowler[]>([]);
+
+  useEffect(() => {
+    const fetchBowlerData = async () => {
+      const rsp = await fetch('https://localhost:7142/api/Bowlers');
+      const b = await rsp.json();
+      setBowlerData(b);
+    };
+    fetchBowlerData();
+  }, []);
 
   return (
     <>
