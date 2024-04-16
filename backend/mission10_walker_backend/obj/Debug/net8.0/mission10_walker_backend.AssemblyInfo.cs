@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("mission10_walker_backend")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3eb0dfd4966306b3b0dcd081957703aefbcac487")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f96049b7e0777fe3e68b14ba1491ceb7c034f28a")]
 [assembly: System.Reflection.AssemblyProductAttribute("mission10_walker_backend")]
 [assembly: System.Reflection.AssemblyTitleAttribute("mission10_walker_backend")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
